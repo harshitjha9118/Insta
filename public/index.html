@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Insta-style Demo</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<div class="app">
+ <aside class="sidebar">
+  <div class="wordmark">Instagram<span class="demo">DEMO</span></div>
+  <nav><button class="nav active" data-view="home"><b>⌂</b> Home</button><button class="nav" data-view="search"><b>⌕</b> Search</button><button class="nav" data-view="explore"><b>▦</b> Explore</button><button class="nav" data-view="messages"><b>✉</b> Messages</button><button class="nav" data-view="profile"><b>◉</b> Profile</button></nav>
+  <button class="more" id="logout">☰ More · Log out</button>
+ </aside>
+ <main class="main">
+  <section class="auth" id="auth">
+   <div class="auth-card">
+    <div class="wordmark loginmark">Instagram</div><div class="demo-note">Independent practice app · not affiliated with Instagram</div>
+    <div class="auth-tabs"><button class="selected" data-mode="login">Log in</button><button data-mode="signup">Sign up</button></div>
+    <form id="authForm"><input id="displayName" placeholder="Name" hidden maxlength="60"><input id="username" placeholder="Username" autocomplete="username" required><input id="password" type="password" placeholder="Demo password (10+ characters)" autocomplete="current-password" required><button class="blue" id="authSubmit">Log in</button><p id="authMsg"></p></form>
+    <div class="or"><span></span> OR <span></span></div><p class="forgot">Forgot password?</p>
+    <p class="demo-note bottom-note">Use a test account created here only. Never enter your real Instagram password.</p>
+   </div>
+  </section>
+  <section id="content" class="content" hidden>
+   <div class="feed-column">
+    <div class="stories" id="stories"><div class="story"><i>＋</i><small>Your story</small></div><div class="story"><i>🌸</i><small>style_daily</small></div><div class="story"><i>☀️</i><small>travel_diary</small></div><div class="story"><i>🎨</i><small>art_world</small></div><div class="story"><i>🐾</i><small>pet_love</small></div></div>
+    <form class="create" id="postForm"><strong>Create a post</strong><input id="caption" placeholder="Write a caption…" maxlength="500"><input id="imageUrl" placeholder="Image URL (optional, https://)" type="url"><button class="blue">Share</button></form>
+    <div id="posts"></div>
+   </div>
+   <aside class="rightbar"><div class="profile-mini"><div class="avatar">U</div><div><b id="meName">demo_user</b><small>Welcome to your demo</small></div></div><p class="suggest">Suggested for you <span>See All</span></p><div class="suggestion">✿ &nbsp; daily.inspo <button>Follow</button></div><div class="suggestion">◉ &nbsp; photo.diary <button>Follow</button></div><footer>About · Help · Privacy · Terms<br>© 2026 INSTA-STYLE DEMO</footer></aside>
+  </section>
+ </main>
+</div><script src="/app.js"></script></body></html>
